@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+ body {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  body{
+    font-family: $font-family-sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 35px;
+    margin-bottom: 35px;
+    font-weight: 300;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+  }
+  
+  
+  @media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 35px;
+    }
+  }
+  
+  a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: rgb(255, 255, 255);
+  }
+  
+  a:focus, a:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease-in;
+  }
+
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background-color:$navbar-default-bg !important;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+      background-color:  rgb(0, 0, 0) !important;
+    }
+    #mainNav .nav-link {
+        text-transform: capitalize !important;
+    }
+    #mainNav .nav-link.active {
+      outline: none;
+      border-bottom: 2px solid $brand-success;
+    }
+    #mainNav .nav-link.active:hover {
+      color: $brand-success;
+      border-bottom: 2px solid $brand-success;
+      display: block;
+    }
+  
+}
+
+.navbar .collapse {
+    background: black !important;
+    text-align: center;
+
+    a:hover {
+        color: $brand-success;
+    }
+
+}
+  .masthead {
+    margin-top: 60px;
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(36, 17, 2);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .masthead .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .intro-text{
+    font-size: 18px;
+    color: #757575;
+    font-weight: 300;
+    margin-bottom: 60px;
+  }
+  
+  @media (min-width: 768px) {
+    .masthead {
+      height: 100%;
+      padding: 0;
+    }
+    .masthead .intro-body .brand-heading {
+      font-size: 60px;
+    }
+    .masthead .intro-body .intro-text {
+      font-size: 22px;
+    }
+  }
+  
+  .btn-circle {
+    font-size: 26px;
+    margin-bottom: 50px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+  }
+  
+  .btn-circle:focus, .btn-circle:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+ 
+  @media (min-width: 992px) {
+    .content-section {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    #map {
+      height: 350px;
+    }
+  }
+  
+  .btn {
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+  
+  .btn-default {
+    color: #42DCA3;
+    border: 1px solid #42DCA3;
+    background-color: transparent;
+  }
+  
+  .btn-default:focus, .btn-default:hover {
+    color: black;
+    border: 1px solid #42DCA3;
+    outline: none;
+    background-color: #42DCA3;
+  }
+  
+  ul.banner-social-buttons {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 1199px) {
+    ul.banner-social-buttons {
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    ul.banner-social-buttons li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  footer {
+    padding: 50px 0;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  ::-moz-selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: none;
+  }
+  
+  img::selection {
+    background: transparent;
+  }
+  
+  img::-moz-selection {
+    background: transparent;
+  }
+  
